@@ -1,0 +1,21 @@
+import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+
+export default function RootLayout() {
+  return (
+    <>
+      <Stack>
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="explore" options={{ headerShown: false }} />
+        <Stack.Screen name="sobre" options={{ headerShown: false }} />
+        <Stack.Screen name="orcamento" options={{ headerShown: false }} />
+        <Stack.Screen name="favoritos" options={{ headerShown: false }} />
+        <Stack.Screen name="login" options={{ headerShown: false }} />
+        <Stack.Screen name="catalogo" options={{ headerShown: false }} />
+        <Stack.Screen name="cadastro" options={{ headerShown: false }} />
+        <Stack.Screen name="produto" options={{ headerShown: false }} />
+      </Stack>
+      <StatusBar style="light" />
+    </>
+  );
+}
